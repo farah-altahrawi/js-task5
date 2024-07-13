@@ -1,0 +1,40 @@
+@import "./base.css";
+h1{
+    text-align: center;
+    margin-block: 30px;
+    color: rgb(148, 6, 6);
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    gap: 30px;
+}
+.product{
+    width: 25%;
+    padding: 12.5px;
+    background-color: rgb(243, 224, 188);
+    transition: transform .5s;
+}
+.product:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 18px rgba(0, 0, 0 , .6);
+}
+.product img{
+    width: 100%;
+}
+
+@media (max-width: 792px) {
+    .product {
+        width: 40%;
+        font-size: smaller;
+    }
+}
+@media (max-width: 450px) {
+    .product {
+        width: 85%;
+        font-size: larger;
+    }
+}
